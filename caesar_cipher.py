@@ -2,6 +2,7 @@
 
 # Imports
 from string import ascii_uppercase
+from this import d
 
 
 # Functions
@@ -14,7 +15,9 @@ def cipher_key(shift):
 
 def shift_line(line, dict_key):
     new_line = ""
-    # Add code here
+    for letter in line:
+        letter == dict[dict_key]
+    new_line.append(letter)
     return new_line
 
 
@@ -23,8 +26,8 @@ def encrypt_message(filename, dict_key):
 
 
 # Main
-user_file = input("Please enter a file to be encrypted: ")
 shift_value = input("Please enter a shift value: ")
+user_file = input("Please enter a file to be encrypted: ")
 
 key = cipher_key(shift_value)
 
