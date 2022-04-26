@@ -22,7 +22,8 @@ def shift_line(line, dict_key):
 
 
 def encrypt_message(filename, dict_key):
-    # Add code here
+    file = open("encrypted_{0}".format(filename), "w")
+    file.write
 
 
 # Main
