@@ -22,8 +22,10 @@ def shift_line(line, dict_key):
 
 
 def encrypt_message(filename, dict_key):
-    file = open("encrypted_{0}".format(filename), "w")
-    file.write
+    file = open(user_file, "r")
+    encyrpt_file = open("encrypted_{0}".format(filename), "r")
+    for line in file:
+        encyrpt_file.write(shift_line(line, dict_key))
 
 
 # Main
@@ -33,3 +35,5 @@ user_file = input("Please enter a file to be encrypted: ")
 key = cipher_key(shift_value)
 
 encrypt_message(user_file, key)
+
+# idk i tried i cant get it to work
